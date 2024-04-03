@@ -25,7 +25,6 @@ public class Book {
         return "\nTitle: " + getTitle()
                 + "\nAuthor: " + author.getName() + " (" + author.getSex() + ") " + author.getEmail()
                 + "\nYear: " + getYear();
-
     }
 
     public void setTitle(String title) {

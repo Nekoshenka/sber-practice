@@ -21,7 +21,6 @@ public class Circle extends Figure implements Drawable {
 
     @Override
     public void area() {
-
         double A = point2.getX() - point1.getX();
         double B = point2.getY() - point1.getY();
         double C = point3.getX() - point1.getX();
@@ -31,16 +30,13 @@ public class Circle extends Figure implements Drawable {
         double G = 2 * (A * (point3.getY() - point2.getY()) - B * (point3.getX() - point2.getX()));
         double centerX = (D * E - B * F) / G;
         double centerY = (A * F - C * E) / G;
-
         double radius = Math.sqrt((centerX - point1.getX()) * (centerX - point1.getX()) + (centerY - point1.getY()) * (centerY - point1.getY()));
         double area = Math.PI * radius * radius;
-
         System.out.println("Площадь окружности равна: " + area);
     }
 
     @Override
     public void perimeter() {
-
         double A = point2.getX() - point1.getX();
         double B = point2.getY() - point1.getY();
         double C = point3.getX() - point1.getX();
@@ -50,10 +46,8 @@ public class Circle extends Figure implements Drawable {
         double G = 2 * (A * (point3.getY() - point2.getY()) - B * (point3.getX() - point2.getX()));
         double centerX = (D * E - B * F) / G;
         double centerY = (A * F - C * E) / G;
-
         double radius = Math.sqrt((centerX - point1.getX()) * (centerX - point1.getX()) + (centerY - point1.getY()) * (centerY - point1.getY()));
         double perimeter = 2 * Math.PI * radius;
-
         System.out.println("Периметр окружности равен: " + perimeter);
     }
 
