@@ -1,4 +1,4 @@
-package sber.base;
+package sber;
 
 public class SubsequenceSeven {
 
